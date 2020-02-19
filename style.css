@@ -6,7 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: cornflowerblue;
+    background-color: #00F8FE;
     position: fixed;
 }
 
@@ -31,7 +31,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: indigo;
+    background-color: black;
+    font-size: 2rem;
 }
 
 h1, h3 {
@@ -41,6 +42,12 @@ h1, h3 {
 #project-list {
     display: flex;
     justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
+    background-color: #222;
+    color: white;
 }
 
 #contact {
@@ -69,7 +76,7 @@ footer {
     justify-content: center;
     font-size: 1.5rem;
     height: 60px;
-    background-color: darkcyan;
+    background-color: #FF6100;
     color: #fff;
     align-items: center;
 }
