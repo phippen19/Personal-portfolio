@@ -1,16 +1,13 @@
 import { films } from '../Data/films.js'
 import { people } from '../Data/people.js'
 
-let greetingDiv = document.querySelector('.greeting')
+let gallery = document.querySelector('.gallery')
 
 const maleCharacters = people.filter(person => person.gender === "male")
-console.log(maleCharacters)
 
 const femaleCharacters = people.filter(person => person.gender === "female")
-console.log(femaleCharacters)
 
 const otherCharacters = people.filter(person => person.gender === "n/a" || person.gender === "none" || person.gender === "hermaphrodite")
-console.log(otherCharacters)
 
 let maleButton = document.querySelector("#maleButton")
 let femaleButton = document.querySelector("#femaleButton")
@@ -20,15 +17,37 @@ maleButton.addEventListener("click", function (event) {
     populateDOM(maleCharacters)
 })
 
-let counter = 1
+femaleButton.addEventListener("click", function (event) {
+    populateDOM(femaleCharacters)
+})
+
+otherButton.addEventListener("click", function (event) {
+    populateDOM(otherCharacters)
+})
+
+function getLastNumber(url) {
+    let end = url.lastIndexOf('/')
+    let start = end - 2
+    if(url.charAt(start) === '/') {
+        start++
+    }
+    return (url.slice(start, end))
+}
+
+function removeChildren(element){
+    while (element.firstChild) {
+        element.removeChild(element.firstChild)
+    }
+}
 
 function populateDOM(characters) {
+    removeChildren(gallery)
     characters.forEach((person) => {
-        console.log(`${person.url}`)
+        let imageNum = getLastNumber(person.url)
         let personAnchor = document.createElement("a")
         personAnchor.href = "#"
         let personImg = document.createElement("img")
-        personImg.src = `https://starwars-visualguide.com/assets/img/characters/${counter}.jpg`
+        personImg.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
         personImg.addEventListener('error', (event) => {
             personImg.hidden = true
@@ -40,7 +59,8 @@ function populateDOM(characters) {
         })
 
         personAnchor.appendChild(personImg)
-        greetingDiv.appendChild(personAnchor)
-        counter++
+        gallery.appendChild(personAnchor)
     })
 }
+
+populateDOM(people)
