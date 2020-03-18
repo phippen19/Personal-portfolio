@@ -11,6 +11,11 @@ header, footer {
     display: flex;
 }
 
+#defaultImg {
+    max-width: 600px;
+    min-height: 400px;
+}
+
 .nav {
     border: solid 2px;
     padding-right: 1rem;
