@@ -14,7 +14,7 @@
     display: flex;
     list-style-type: none;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .nav-list a {
@@ -22,6 +22,13 @@
     font-size: 2.2rem;
     padding: 2rem;
     text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-list a:hover {
+    background-color: #00F8FE;
+    opacity: .5;
 }
 
 #welcome-section {
