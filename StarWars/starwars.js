@@ -32,7 +32,7 @@ function getLastNumber(url) {
     if(url.charAt(start) === '/') {
         start++
     }
-    return (url.slice(start, end))
+    return url.slice(start, end)
 }
 
 function removeChildren(element){
