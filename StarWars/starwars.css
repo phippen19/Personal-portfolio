@@ -1,11 +1,23 @@
 :root {
     box-sizing: border-box;
-    background-color: #dfdfdf;
+    background-color: lightgray;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 a > img {
     height: 12rem;
-    margin: 4px;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.allButtons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 
 button {
@@ -15,4 +27,12 @@ button {
     background-color: #b9f45a;
     color: black;
     font-weight: 600;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
