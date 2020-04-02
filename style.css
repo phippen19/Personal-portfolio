@@ -57,10 +57,15 @@ h1, h3 {
     justify-content: space-evenly;
 }
 
+.project-tile img {
+    border-radius: 10px;
+}
+
 figcaption {
     text-align: center;
-    background-color: #222;
-    color: white;
+    color: #1d1d1f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
 }
 
 #contact {
@@ -69,7 +74,7 @@ figcaption {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 900;
 }
 
