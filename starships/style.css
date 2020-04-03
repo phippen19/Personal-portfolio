@@ -13,7 +13,8 @@ header, footer {
 }
 
 .shipView {
-
+    width: 100%;
+    margin: 10%;
 }
 
 #defaultImg {
@@ -30,6 +31,10 @@ header, footer {
 a {
     text-decoration: none;
     font-size: 1.25rem;
+}
+
+a:hover {
+    color: white;
 }
 
 li {
