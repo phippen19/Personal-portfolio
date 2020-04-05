@@ -2,6 +2,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 100%;
     display: block;
