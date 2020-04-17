@@ -58,3 +58,8 @@ img {
   max-width: 200px;
   max-height: 200px;
 }
+
+.card__face ul {
+  text-align: left;
+  list-style-type: square;
+}
