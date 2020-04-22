@@ -1,4 +1,25 @@
+:root {
+    background-color: lightgray;
+  }
+
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    border-radius: 1rem;
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
 }

@@ -1,19 +1,35 @@
+:root {
+  background-color: lightgray;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.button {
+  height: 3rem;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: #00F8FE;
+  color: black;
+  font-weight: 600;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
 .scene {
-  width: 200px;
-  height: 260px;
+  width: 220px;
+  height: 280px;
   border: 1px solid #CCC;
   margin: 10px;
   perspective: 600px;
@@ -46,11 +62,11 @@ header {
 }
 
 .card__face--front {
-  background: red;
+  background: darkslategray;
 }
 
 .card__face--back {
-  background: blue;
+  background: darkslategray;
   transform: rotateY(180deg);
 }
 
