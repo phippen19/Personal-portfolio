@@ -26,6 +26,7 @@ header, footer {
     border: solid 2px blue;
     padding: 1rem;
     background-color: #333333;
+    border-radius: 10px;
 }
 
 a {
