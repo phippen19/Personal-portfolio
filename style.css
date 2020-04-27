@@ -52,12 +52,18 @@ body {
     background-color: black;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    background: url(https://37fje61jitko1u4w2m10q26t-wpengine.netdna-ssl.com/wp-content/uploads/revslider/main/velocity-billboard-background.jpg) no-repeat center center fixed; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(https://37fje61jitko1u4w2m10q26t-wpengine.netdna-ssl.com/wp-content/uploads/revslider/main/velocity-billboard-background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#face {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100%;
+    border: #00F8FE solid 2px;
 }
 
 h1, h3 {
