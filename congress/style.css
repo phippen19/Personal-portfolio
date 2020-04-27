@@ -17,6 +17,7 @@ img {
 h1 {
     display: flex;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 figcaption {
