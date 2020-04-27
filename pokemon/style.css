@@ -6,6 +6,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button {
@@ -17,7 +18,13 @@ header {
   font-weight: 600;
   margin-left: .5rem;
   margin-right: .5rem;
+  margin-bottom: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: solid black 1px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .pokeContainer {
@@ -68,11 +75,13 @@ header {
 .card__face--back {
   background: darkslategray;
   transform: rotateY(180deg);
+  vertical-align: middle;
 }
 
 img {
   max-width: 200px;
   max-height: 200px;
+  padding-top: 10px;
 }
 
 .card__face ul {

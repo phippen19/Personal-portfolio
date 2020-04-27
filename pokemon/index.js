@@ -115,7 +115,7 @@ class Pokemon {
 }
 
 function addPokemon() {
-  let newPokemon = new Pokemon(50, 25, 'Thoremon', [
+  let newPokemon = new Pokemon(50, 25, 'Unkown', [
     {
       ability:
       { name: 'Thunder Belly' }
