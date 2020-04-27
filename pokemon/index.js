@@ -6,7 +6,13 @@ startButton.addEventListener('click', () => {
 
 let newButton = document.querySelector('#newButton')
 newButton.addEventListener('click', () => {
-  addPokemon()
+  const pokemonRect = addPokemon()
+  console.log(pokemonRect)
+  window.scrollTo({
+    top: pokemonRect.top,
+    left: pokemonRect.left,
+    behavior: 'smooth'
+  })
 })
 
 async function getAPIData(url) {
@@ -20,8 +26,8 @@ async function getAPIData(url) {
   }
 }
 
-function loadPage() {
-  getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then(
+function loadPage(offset, limit) {
+  getAPIData(`https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`).then(
     async (data) => {
       for (const pokemon of data.results) {
         await getAPIData(pokemon.url).then(
@@ -49,6 +55,7 @@ function populatePokeCard(singlePokemon) {
     pokeCard.appendChild(pokeBack)
     pokeScene.appendChild(pokeCard)
     pokeContainer.appendChild(pokeScene)
+    return pokeScene.getBoundingClientRect()
 }
 
 function populateCardFront(pokemon) {
@@ -124,5 +131,5 @@ function addPokemon() {
     ]
   }
 ])
-  populatePokeCard(newPokemon)
+return populatePokeCard(newPokemon)
 }
