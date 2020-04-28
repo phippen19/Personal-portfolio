@@ -1,6 +1,10 @@
 :root {
     box-sizing: border-box;
-    background-color: lightgray;
+    background: url(https://comicyears.com/wp-content/uploads/2020/04/7.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h1 {
