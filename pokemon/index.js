@@ -83,6 +83,7 @@ function populateCardBack(pokemon) {
   let cardBack = document.createElement('div')
   cardBack.className = 'card__face card__face--back'
   let abilityList = document.createElement('ul')
+  abilityList.className = 'abilityList'
   abilityList.textContent = 'Abilities:'
   pokemon.abilities.forEach(ability => {
     let abilityName = document.createElement('li')
@@ -118,7 +119,11 @@ function addPokemon() {
   let newPokemon = new Pokemon(50, 25, 'Unkown', [
     {
       ability:
-      { name: 'Thunder Belly' }
+      { name: 'Quarentine' }
+},
+    {
+      ability:
+      { name: 'Sanitize' }
 }], [
   {
     move: {

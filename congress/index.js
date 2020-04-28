@@ -27,7 +27,9 @@ function populateContainer(smallSenatorsArray) {
     return smallSenatorsArray.forEach(senator => {
 
         let senDiv = document.createElement('div')
+        senDiv.className = 'senDiv'
         let senFigure = document.createElement('figure')
+        senFigure.className = 'senFigure'
         let figImg = document.createElement('img')
         let figCaption = document.createElement('figcaption')
         let partyIcon = document.createElement('i')

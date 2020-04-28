@@ -1,5 +1,5 @@
 :root {
-  background-color: lightgray;
+  background-color: darkblue;
 }
 
 header {
@@ -7,6 +7,7 @@ header {
   flex-direction: column;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: yellow;
 }
 
 .button {
@@ -37,8 +38,7 @@ header {
 .scene {
   width: 220px;
   height: 280px;
-  border: 1px solid #CCC;
-  margin: 10px;
+  margin: 1rem;
   perspective: 600px;
   border-radius: 30px;
 }
@@ -50,7 +50,6 @@ header {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-
 }
 
 .card.is-flipped {
@@ -62,20 +61,20 @@ header {
   width: 100%;
   height: 100%;
   color: white;
-  text-align: center;
   font-size: 1.25rem;
   backface-visibility: hidden;
   border-radius: 30px;
+  box-shadow: -6px 10px 5px 5px yellow;
+  text-align: center;
 }
 
 .card__face--front {
-  background: darkslategray;
+  background: blue;
 }
 
 .card__face--back {
-  background: darkslategray;
+  background: blue;
   transform: rotateY(180deg);
-  vertical-align: middle;
 }
 
 img {
@@ -87,4 +86,5 @@ img {
 .card__face ul {
   text-align: left;
   list-style-type: square;
+  padding-top: 4rem;
 }
