@@ -1,3 +1,4 @@
+import { removeChildren } from '../utils.js'
 let pokeContainer = document.querySelector('.pokeContainer')
 let startButton = document.querySelector('#startButton')
 startButton.addEventListener('click', () => {
@@ -13,6 +14,11 @@ newButton.addEventListener('click', () => {
     left: pokemonRect.left,
     behavior: 'smooth'
   })
+})
+
+let reset = document.querySelector('#reset')
+reset.addEventListener('click', () =>{
+  removeChildren(pokeContainer)
 })
 
 async function getAPIData(url) {
