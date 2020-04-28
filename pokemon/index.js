@@ -125,7 +125,7 @@ function addPokemon() {
   let newPokemon = new Pokemon(50, 25, 'Unkown', [
     {
       ability:
-      { name: 'Quarentine' }
+      { name: 'Quarantine' }
 },
     {
       ability:
