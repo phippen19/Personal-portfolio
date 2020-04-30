@@ -1,5 +1,9 @@
 :root {
-    background-color: lightgray;
+    background: url(https://www.trustedtours.com/city/washingtondc/dccs/dcus/photos/01_US%20Capitol%20Building%20!amp!%20Capitol%20Hill%20Walking%20Tour.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 .container {
